@@ -43,10 +43,18 @@ def pessenger_info():
 	info.append(last)
 	return info
 
-def origin_destination_info():
+def origin_info():
 	info = []
-	city = string.capwords(input("Input your city: "))
-	airport = input("Input your airport: ").upper()
+	city = string.capwords(input("Input your origin city: "))
+	airport = input("Input your origin airport: ").upper()
+	info.append(city)
+	info.append(airport)
+	return info
+
+def destination_info():
+	info = []
+	city = string.capwords(input("Input your destination city: "))
+	airport = input("Input your destination airport: ").upper()
 	info.append(city)
 	info.append(airport)
 	return info
@@ -79,8 +87,8 @@ def order_ticket():
 	system("cls")
 	booking_code = booking_code_generator()
 	pessenger = pessenger_info()
-	origin = origin_destination_info()
-	destination = origin_destination_info()
+	origin = origin_info()
+	destination = destination_info()
 	time = time_info()
 	terminal = (f"{random.randint(1,9)}{random.choice(upper_case)}")
 	airlines = string.capwords(input("Input your airlines: "))
