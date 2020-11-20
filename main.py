@@ -95,7 +95,7 @@ def order_ticket():
 	seat = (f"{random.randint(1,50)}{random.choice(upper_case)}")
 	klas = input("Choose your class (business or economy): ")
 	bag = float(input("Input your extra baggage: "))
-	respon = input("are you sure you want to book a ticket? ")
+	respon = input("are you sure you want to book a ticket (Y/N)? ")
 	if verify(respon):
 		id_data = create_id_data(airlines)
 		ticket_data[id_data]={
@@ -137,10 +137,10 @@ def order_ticket():
 
 def cancel_ticket():
 	system("cls")
-	search_id = input("Input your flight code (ex. 20200611-G0001)")
+	search_id = input("Input your flight code (ex. 20200611-G0001): ")
 	for id_data in ticket_data:
 		if id_data == search_id:
-			respon = input("Are you sure to cancel the ticket order?")
+			respon = input("Are you sure to cancel the ticket order? ")
 			verify(respon)
 			if verify:
 				del ticket_data[search_id]
