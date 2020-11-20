@@ -14,6 +14,7 @@ def menu():
 
 def print_ticket(data):
 	system("cls")
+	print("Your ticket")
 	num = 1
 	for id_data in data:
 		code = data[id_data]["booking_code"]
@@ -85,6 +86,7 @@ def create_id_data(plane):
 
 def order_ticket():
 	system("cls")
+	print("Order new ticket")
 	booking_code = booking_code_generator()
 	pessenger = pessenger_info()
 	origin = origin_info()
@@ -137,6 +139,7 @@ def order_ticket():
 
 def cancel_ticket():
 	system("cls")
+	print("Cancel your ticket order")
 	search_id = input("Input your flight code (ex. 20200611-G0001): ")
 	for id_data in ticket_data:
 		if id_data == search_id:
