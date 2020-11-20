@@ -1,0 +1,28 @@
+{
+	"20200611-G0001":{
+		"booking_code" : "KFG4",
+		"pessenger" : {
+			"title" : "mr,",
+			"front_name" : "Alex",
+			"last_name" : "Leon"
+	 	},
+	 	"origin" : {
+	 		"city" : "Jakarta",
+	 		"airport" : "JKT"
+	 	},
+	 	"destination" : {
+	 		"city" : "Bali",
+	 		"airport" : "Bl"
+	 	},
+	 	"time" : {
+	 		"check_in" : "10.30",
+	 		"boarding" : "11.35",
+	 		"arrival" : "12.20"
+	 	},
+	 	"terminal" : "3A",
+	 	"airline" : "Garuda Indonesia",
+	 	"seat" : "4B",
+	 	"class" : "Economy",
+	 	"baggage" : 10
+	 }
+}
